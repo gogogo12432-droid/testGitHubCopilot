@@ -81,9 +81,27 @@ section h3 {
 }
 
 .participants-section ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 5px 0;
+  /* Hide bullet points and adjust participant list */
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.delete-icon {
+  cursor: pointer;
+  color: #d11a2a;
+  font-size: 1.1em;
+  margin-left: 4px;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #a00;
+}
 }
 
 .participants-section li {
